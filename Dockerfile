@@ -1,4 +1,4 @@
-FROM golang:alpine as builder
+FROM golang:alpine AS builder
 RUN apk add --no-cache ca-certificates
 WORKDIR /go/src/github.com/disintegration/bebop
 COPY . .
